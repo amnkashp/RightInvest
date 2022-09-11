@@ -13,6 +13,7 @@ import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -30,6 +31,14 @@ public class AdminController {
 	/*
 	 * @Autowired(required = true) UserRepository userRepository;
 	 */
+	
+	@PostMapping()
+	public User adduser() {
+		
+		return null;
+	}
+	
+	
 	
 	@GetMapping("/getUser/{userid}")
 	public User getUser(@RequestBody  @PathVariable("userid") Integer userid) throws HttpMediaTypeNotAcceptableException   {
@@ -50,8 +59,6 @@ public class AdminController {
 	public List<User> getUserList(){
 		List<User> userlist = new ArrayList<User>();
 		userlist = adminService.getAllUser();
-		
-		
 		
 		return userlist ; 
 	}

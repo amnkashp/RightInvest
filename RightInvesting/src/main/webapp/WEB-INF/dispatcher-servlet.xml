@@ -42,7 +42,7 @@
 		<!-- Step 2: Session Factory --> 
 		<bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="dataSource" ref="myDataSource"></property> 
-		<property name="packagesToScan" value="com.rightInvesting.ip"></property>
+		<property name="packagesToScan" value="com.rightInvesting"></property>
 		<property name="hibernateProperties">
 			<props>
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</prop>

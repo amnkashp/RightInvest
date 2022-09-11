@@ -23,7 +23,7 @@
   --%>
 
 	 <div>
-		<form:form action="formInput" modelAttribute="user" method="Get" >
+		<form:form action="formInput" modelAttribute="user" method="Post" >
 		
 			<table>
 				<tbody>
