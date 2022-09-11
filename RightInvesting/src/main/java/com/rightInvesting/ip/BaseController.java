@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -57,7 +58,7 @@ public class BaseController {
 		return "GetCustomerForm";
 	}
 	
-	@GetMapping("/formInput")
+	@PostMapping("/formInput")
 	public String AddUserDetails(@ModelAttribute User user, BindingResult String  ) throws Exception {
 		
 		System.out.println("User input is valid");
