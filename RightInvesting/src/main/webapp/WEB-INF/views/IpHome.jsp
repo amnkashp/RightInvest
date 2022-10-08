@@ -14,5 +14,8 @@
 <h2>This is for testing purpose</h2>
 <h2>this is testing for staging branch</h2>
 <h1>testing from amn side</h1>
+
+
+<a href="/RightInvesting/blogs/Written">what is written</a>
 </body>
 </html>

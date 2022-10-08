@@ -15,27 +15,23 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class BlogDaoImplementation implements BlogDao{
 	
-	
-	
 	@Autowired
 	SessionFactory sessionfactory;
 	
 	
-	
 	@Override
-	public Blog getBlog() throws HibernateQueryException{
-		List<String> blogscontent;
-		System.out.println("entered in the Blog Implementation method ");
+	public List<Blog> getBlogNew(String Tittle) {
+	
+		List<Blog> blogscontent;
+		
 		Session currentSession = sessionfactory.getCurrentSession();
-		String sql = "From Blog Where blogtittle Like 'test'";
+		
+		String sql = "From Blog Where blogtittle Like '"+Tittle+"'";
 		Query query = currentSession.createQuery(sql);
-		System.out.println("Here is the query result " +query);
+		
 		blogscontent = query.list();
-		System.out.println("Result of Query in List form " +blogscontent);
 		
-		
-		
-		return null;
+		return blogscontent;
 	}
 
 }

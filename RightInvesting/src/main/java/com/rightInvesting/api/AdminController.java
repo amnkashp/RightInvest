@@ -41,21 +41,17 @@ public class AdminController {
 	
 	
 	@GetMapping("/getUser/{userid}")
-	public User getUser(@RequestBody  @PathVariable("userid") Integer userid) throws HttpMediaTypeNotAcceptableException   {
-		System.out.println("Come to the rest controller");
+	public User getUser(@RequestBody  @PathVariable("userid") Integer userid) throws HttpMediaTypeNotAcceptableException   
+	{
 		Integer uid = userid;
-		
 		User user = new User();
-		
-		 user = adminService.getUser(uid);
-		 
-		 
+		user = adminService.getUser(uid);
 		 return user;
 	}
 	
 	
 	
-	@GetMapping(value= "/getUserslist")
+	@GetMapping("/getUserslist")
 	public List<User> getUserList(){
 		List<User> userlist = new ArrayList<User>();
 		userlist = adminService.getAllUser();
@@ -63,7 +59,7 @@ public class AdminController {
 		return userlist ; 
 	}
 	
-	
+	public User updateAppointmentTime() {return null;}
 	
 
 }
