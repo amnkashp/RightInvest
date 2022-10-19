@@ -62,7 +62,7 @@ align-items:center;
 justify-content:space-between;
 padding:2rem 9%;
 background:#fff;
-box shadow: var(--box-shadow):
+box-shadow: var(--box-shadow);
 }
 
 .header .navbar a{
@@ -85,6 +85,7 @@ border-radius: 25px;
 button:hover{
 background-color:#191970;
 }
+
 .home{
 display: flex;
 align-items: center;
