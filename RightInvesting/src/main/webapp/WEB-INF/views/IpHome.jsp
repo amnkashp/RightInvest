@@ -29,9 +29,14 @@
 	
 
 
+<<<<<<< HEAD
 
 
 
 
+=======
+<a href="/RightInvesting/blogs/Written">what is written</a>
+<h1>this is testing for updation   </h1>
+>>>>>>> branch 'staging' of https://github.com/amnkashp/RightInvest.git
 </body>
 </html>
