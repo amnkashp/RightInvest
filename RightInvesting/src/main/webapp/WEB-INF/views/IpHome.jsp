@@ -14,29 +14,6 @@
 </head>
 
 <body>
-	 <security:authentication property="principal.username"/> 
-	<br><br>
-	 <security:authentication property="principal.authorities"/> 
-	</p>
-	<security:authorize access="hasRole('EMPLOYEE')">
-	<a href="${pageContext.request.contextPath}/"></a>
-	</security:authorize>
-	<br><br>
-	<security:authorize access="hasRole('ADMIN')">
-	<a href="${pageContext.request.contextPath}/admin"></a>
-	</security:authorize>
-	<br><br>
-	
 
-
-<<<<<<< HEAD
-
-
-
-
-=======
-<a href="/RightInvesting/blogs/Written">what is written</a>
-<h1>this is testing for updation   </h1>
->>>>>>> branch 'staging' of https://github.com/amnkashp/RightInvest.git
 </body>
 </html>
